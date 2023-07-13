@@ -1,0 +1,15 @@
+app:
+  name: kondareddyr-poi-map-app
+  namespace: kondareddyr
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/kondareddyr-frontend
+  org: rosa916-rvhvd
+  name: kondareddyr-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kondareddyr/poi-map-app
+  tag: latest
